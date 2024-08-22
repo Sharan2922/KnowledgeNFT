@@ -5,7 +5,8 @@ import HeroSection from './HeroSection/HeroSection';
 import Service from './Service/Service';
 import BigNFTSlider from './BigNFTSlider/BigNFTSlider';
 import Subscribe from './Subscribe/Subscribe';
+import Category from './Category/Category';
 import Title from './Title/Title';
 
 
-export {Button,Footer, NavBar, HeroSection, Service, BigNFTSlider, Subscribe, Title};
+export {Button,Footer, NavBar, HeroSection, Service, BigNFTSlider, Subscribe, Title, Category};
