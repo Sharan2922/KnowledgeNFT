@@ -9,6 +9,7 @@ import Subscribe from './Subscribe/Subscribe';
 import Category from './Category/Category';
 import Title from './Title/Title';
 import NFTCard from './NftCard/NftCard';
+import Collection from './Collection/Collection';
 
 
-export {Button,Footer,NFTCard, NavBar, HeroSection, Service, BigNFTSlider, Subscribe, Title, Category, Filter};
+export {Button,Footer,NFTCard, Collection,NavBar, HeroSection, Service, BigNFTSlider, Subscribe, Title, Category, Filter};
