@@ -14,11 +14,13 @@ import FollowerTab from './FollowerTab/FollowerTab';
 import AudioLive from './AudioLive/AudioLive';
 import LikeProfile from './LikeProfile/Likeprofile';
 import Slider from './Slider/Slider';
+import Video from './Video/Video';
 // import SliderCard from './Slider/SliderCard/SliderCard';
 
 export {
     Button,
     Footer,
+    Video,
     LikeProfile, 
     AudioLive, FollowerTab,
     NFTCard, Collection,NavBar, 
