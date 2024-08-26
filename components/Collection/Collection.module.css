@@ -1,83 +1,86 @@
-
-.collection{
+/* Base styles */
+.collection {
     width: 100%;
     padding: 3rem 0;
     padding-bottom: 10rem;
+    box-sizing: border-box; /* Ensure padding is included in width */
 }
 
-.collection_title{
-    width: 35rem;
-    margin:  0 auto;
-    padding: 0 0 6rem 0;
+.collection_title {
+    width: 90%; /* Adjusted for better responsiveness */
+    max-width: 35rem; /* Ensure it doesn't exceed this width */
+    margin: 0 auto;
+    padding-bottom: 4rem; /* Reduced padding for better fit */
     text-align: center;
 }
 
-.collection_title h2{
-    font-size: 3rem;
-    margin-bottom: 4rem;
+.collection_title h2 {
+    font-size: 2.5rem; /* Adjusted font size for better scaling */
+    margin-bottom: 2rem; /* Adjusted margin for spacing */
 }
 
-.collection_collections_btn{
+.collection_collections_btn {
     background-color: var(--main-bg-color);
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
     border-radius: 4rem;
     display: flex;
-    justify-content: space-around;
-    gap: 1rem;
+    justify-content: center; /* Center items */
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1rem; /* Adjusted font size */
     box-shadow: var(--box-shadow);
 }
 
-.collection_collections_btn button{
+.collection_collections_btn button {
     background-color: var(--icons-color);
     color: var(--main-bg-color);
-    padding: 1rem;
+    padding: 0.75rem 1rem; /* Adjusted padding */
     border: none;
     border-radius: 4rem;
     cursor: pointer;
     border: 1px solid var(--icons-color);
-    transition:  all .3s ease-in;
+    transition: all 0.3s ease-in;
+    font-size: 1rem; /* Adjusted font size */
 }
 
-.collection_collections_btn button:hover{
+.collection_collections_btn button:hover {
     background-color: transparent;
     color: var(--icons-color);
 }
 
-.collection_box{
-    width: 80%;
+.collection_box {
+    width: 90%; /* Adjusted width for responsiveness */
+    max-width: 1200px; /* Set a maximum width for larger screens */
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+    box-sizing: border-box; /* Ensure padding is included in width */
 }
 
-
-@media screen and (min-device-width: 320px) and (max-device-width: 425px) {
-    .collection_title{
+/* Responsive styles */
+@media screen and (max-width: 425px) {
+    .collection_title {
         width: 90%;
+        padding-bottom: 2rem; /* Reduced padding for smaller screens */
     }
 
-    .collection_box{
-        width: 90%;
-        grid-template-columns: 1fr;
-        gap: 4rem;
+    .collection_box {
+        grid-template-columns: 1fr; /* Single column for small screens */
+        gap: 1.5rem; /* Reduced gap for better spacing */
     }
 
-    .collection_collections_btn button{
-        font-size: .7rem;
+    .collection_collections_btn button {
+        font-size: 0.9rem; /* Adjusted font size for smaller screens */
     }
 }
 
-@media screen and (min-device-width: 427px) and (max-device-width: 1024px) {
-    .collection_title{
+@media screen and (max-width: 1024px) {
+    .collection_title {
         width: 90%;
     }
 
-    .collection_box{
-        width: 90%;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 4rem;
+    .collection_box {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
+        gap: 1.5rem; /* Adjusted gap for better spacing */
     }
 }

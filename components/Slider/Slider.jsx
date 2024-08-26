@@ -34,18 +34,21 @@ const Slider = () => {
       user: images.user2,
     },
   ];
+
   const [width, setWidth] = useState(0);
-  const dragSlider = useRef();
+  const dragSlider = useRef(null);
 
   useEffect(() => {
-    setWidth(dragSlider.current.scrollWidth - dragSlider.current.offsetWidth);
-  });
+    if (dragSlider.current) {
+      setWidth(dragSlider.current.scrollWidth - dragSlider.current.offsetWidth);
+    }
+  }, []);
 
   const handleScroll = (direction) => {
     const { current } = dragSlider;
     const scrollAmount = window.innerWidth > 1800 ? 270 : 210;
 
-    if (direction == "left") {
+    if (direction === "left") {
       current.scrollLeft -= scrollAmount;
     } else {
       current.scrollLeft += scrollAmount;
@@ -76,10 +79,10 @@ const Slider = () => {
 
         <motion.div className={Style.slider_box_itmes} ref={dragSlider}>
           <motion.div
-            ref={dragSlider}
             className={Style.slider_box_item}
             drag="x"
             dragConstraints={{ right: 0, left: -width }}
+            whileTap={{ cursor: "grabbing" }}
           >
             {FollowingArray.map((el, i) => (
               <SliderCard key={i + 1} el={el} i={i} />

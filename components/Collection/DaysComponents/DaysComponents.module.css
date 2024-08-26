@@ -1,79 +1,123 @@
-
-.daysComponent{
+/* Base styles */
+.daysComponent {
     width: 100%;
+    max-width: 100%; /* Ensure it doesn't exceed the screen width */
     border-radius: 1rem;
-    transition: all .3s ease-in;
+    transition: all 0.3s ease-in;
     cursor: pointer;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    overflow-x: hidden; /* Prevent horizontal overflow */
 }
 
-.daysComponent:hover{
+.daysComponent:hover {
     box-shadow: var(--box-shadow);
 }
 
+.daysComponent_box_img {
+    position: relative;
+    width: 100%;
+    padding-top: 60%; /* Maintain aspect ratio (adjust as needed) */
+    border-radius: 1rem;
+    overflow: hidden;
+}
 
-.daysComponent_box_img_img{
+.daysComponent_box_img_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 1rem;
 }
 
-.daysComponent_box_profile{
+.daysComponent_box_profile {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: .5rem;
+    gap: 0.5rem;
 }
 
-.daysComponent_box_img_1{
-    border-bottom-left-radius: 1rem;
-}
-.daysComponent_box_img_3{
-    border-bottom-right-radius: 1rem;
+.daysComponent_box_img_1,
+.daysComponent_box_img_2,
+.daysComponent_box_img_3 {
+    position: relative;
+    padding-top: 100%; /* 1:1 aspect ratio for profile images */
+    overflow: hidden;
 }
 
-.daysComponent_box_title{
+.daysComponent_box_img_1 img,
+.daysComponent_box_img_2 img,
+.daysComponent_box_img_3 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem; /* Adjust to remove or modify the border radius */
+}
+
+.daysComponent_box_title {
     padding: 1rem 2rem;
-    line-height: 0;
+    line-height: 1.2; /* Ensure text does not get too close together */
 }
 
-.daysComponent_box_title_info_profile{
+.daysComponent_box_title_info_profile {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
 
-.daysComponent_box_title_info{
+.daysComponent_box_title_info {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap; /* Ensure content wraps on small screens */
 }
 
-.daysComponent_box_title_info_profile_img{
+.daysComponent_box_title_info_profile_img {
     border-radius: 50%;
 }
 
-.daysComponent_box_title_info_profile span{
-  font-weight: 600;
-  padding-inline: .5rem;
+.daysComponent_box_title_info_profile span {
+    font-weight: 600;
+    padding-inline: 0.5rem;
 }
 
-.daysComponent_box_title_info_price small{
+.daysComponent_box_title_info_price small {
     font-weight: 600;
     border: 3px solid var(--icons-color);
-    padding: .5rem;
-    border-radius: .5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
 }
 
-@media screen and (min-device-width: 320px) and (max-device-width: 768px) {
-    .daysComponent_box_profile{
-        grid-template-columns: repeat(3, 1fr);
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .daysComponent_box_profile {
+        grid-template-columns: repeat(2, 1fr); /* Adjust the number of columns for smaller screens */
     }
 
-    .daysComponent_box_title_info{
+    .daysComponent_box_title_info {
         flex-direction: column;
-        gap: 2rem;
+        gap: 1rem;
         align-items: flex-start;
         padding: 1rem;
     }
 }
 
-.daysComponent_box_title{
-    padding: 1rem;
+@media screen and (max-width: 480px) {
+    .daysComponent_box_title {
+        padding: 0.5rem; /* Reduce padding for very small screens */
+    }
+
+    .daysComponent_box_profile {
+        grid-template-columns: 1fr; /* Single column for very small screens */
+    }
+
+    .daysComponent_box_title_info {
+        flex-direction: column; /* Stack elements vertically */
+        gap: 1rem;
+        align-items: flex-start;
+        padding: 1rem;
+    }
 }
