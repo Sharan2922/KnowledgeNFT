@@ -15,11 +15,11 @@ const HelpCenter = () => {
     },
     {
       name: "Sign Up",
-      link: "sign-up",
+      link: "signup",
     },
     {
       name: "Sign In",
-      link: "sign-in",
+      link: "login",
     },
   ]
   return (
