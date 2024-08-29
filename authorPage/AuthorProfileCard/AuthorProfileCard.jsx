@@ -19,7 +19,7 @@ import Style from "./AuthorProfileCard.module.css";
 import images from "../../img";
 import { Button } from "@/components/componentindex";
 
-const AuthorProfileCard = () => {
+const AuthorProfileCard = ({currentAcco}) => {
   const [share, setShare] = useState(false);
   const [report, setReport] = useState(false);
 
@@ -73,7 +73,7 @@ const AuthorProfileCard = () => {
           <div className={Style.AuthorProfileCard_box_info_address}>
             <input
               type="text"
-              value="0x829BD824B03D092293333..A830"
+              value={currentAcco}
               id="myInput"
             />
             <FiCopy

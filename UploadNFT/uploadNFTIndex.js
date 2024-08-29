@@ -1,4 +1,4 @@
 import DropZone from "./DropZone/DropZone";
-import UploadNFT from "./UloadNFT.jsx";
+import UloadNFT from "./UloadNFT";
 
-export { DropZone, UploadNFT };
+export { DropZone, UloadNFT };

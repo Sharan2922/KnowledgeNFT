@@ -1,8 +1,14 @@
-import React from 'react'
+import React, {useState,useEffect,useContext} from 'react'
 import Style from '../styles/index.module.css'
 import { HeroSection, Service,Slider,AudioLive,Collection,FollowerTab, BigNFTSlider,Subscribe, Title, Category, Filter, NFTCard } from '@/components/componentindex'
+import { NFTMarketplaceContext } from '@/Context/NFTMarketplaceContext'
 
 const Home = () => {
+  const {checkWalletConnected} = useContext(NFTMarketplaceContext)
+
+  useEffect(()=>{
+    checkWalletConnected();
+  },[]);
   return (
     <div className={Style.homepage}>
       <HeroSection />

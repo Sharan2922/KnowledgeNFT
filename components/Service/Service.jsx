@@ -10,65 +10,63 @@ const Service = () => {
         <div className={Style.service_box_item}>
           <Image
             src={images.service1}
-            alt="Filter & Discover"
+            alt="connect to wallet"
             width={100}
             height={100}
           />
           <p className={Style.service_box_item_step}>
             <span>Step 1</span>
           </p>
-          <h3>Filter & Discover</h3>
+          <h3>Connect to Wallet</h3>
           <p>
-            Connect with wallet, discover, buy NTFs, sell your NFTs and earn
+            Connect with wallet, discover, buy courses,certification, sell and earn
             money
           </p>
         </div>
         <div className={Style.service_box_item}>
           <Image
             src={images.service2}
-            alt="Filter & Discover"
+            alt="Search & Discover"
             width={100}
             height={100}
           />
           <p className={Style.service_box_item_step}>
             <span>Step 2</span>
           </p>
-          <h3>Filter & Discover</h3>
+          <h3>Search & Discover</h3>
           <p>
-            Connect with wallet, discover, buy NTFs, sell your NFTs and earn
+            Discover, buy Courses according to your needs, sell  and earn
             money
           </p>
         </div>
         <div className={Style.service_box_item}>
           <Image
             src={images.service3}
-            alt="Connect Wallet"
+            alt="resell"
             width={100}
             height={100}
           />
           <p className={Style.service_box_item_step}>
             <span>Step 3</span>
           </p>
-          <h3>Connect Wallet</h3>
+          <h3>ReSell your NFTs</h3>
           <p>
-            Connect with wallet, discover, buy NTFs, sell your NFTs and earn
-            money
+            after completion of course, resell your course or certificate. 
           </p>
         </div>
         <div className={Style.service_box_item}>
           <Image
             src={images.service1}
-            alt="Filter & Discover"
+            alt="follow creators"
             width={100}
             height={100}
           />
           <p className={Style.service_box_item_step}>
             <span>Step 4</span>
           </p>
-          <h3>Start trading</h3>
+          <h3>Follow creators</h3>
           <p>
-            Connect with wallet, discover, buy NTFs, sell your NFTs and earn
-            money
+            you can follow your favorite creators for get updates.
           </p>
         </div>
       </div>
