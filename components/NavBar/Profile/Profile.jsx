@@ -8,42 +8,42 @@ import { TbDownload, TbDownloadOff } from 'react-icons/tb';
 import Link from 'next/link';
 import images from "../../../img";
 
-const Profile = () => {
+const Profile = ({currentAcco}) => {
   return (
     <div className={style.profile}>
       <div className={style.profile_account}>
         <Image src={images.user1} alt="user profile" width={50} height={50} className={style.profile_account_img} />
         <div className={style.profile_account_info}>
-          <p>Shoaib Bhai</p>
-          <small>x0384913461124...</small>
+          <p>Sharath</p>
+          <small>{currentAcco.slice(0,18)}..</small>
         </div>
       </div>
       <div className={style.profile_menu}>
         <div className={style.profile_menu_one}>
           <div className={style.profile_menu_one_item}>
             <FaUserAlt /> 
-            <p><Link href="/myprofile">My Profile</Link></p>
+            <p><Link href="/author">My Profile</Link></p>
           </div>
           <div className={style.profile_menu_one_item}>
             <FaRegImage /> 
-            <p><Link href="/my-items">My Items</Link></p>
+            <p><Link href="/author">My Items</Link></p>
           </div>
           <div className={style.profile_menu_one_item}>
             <FaUserEdit />
-            <p><Link href="/edit-profile">Edit Profile</Link></p>
+            <p><Link href="/account">Edit Profile</Link></p>
           </div>
         </div>
         <div className={style.profile_menu_two}>
           <div className={style.profile_menu_one_item}>
             <MdHelpCenter />
             <p>
-              <Link href="/help">Help</Link>
+              <Link href="/contactus">Help</Link>
             </p>
           </div>
           <div className={style.profile_menu_one_item}>
             <TbDownload />
             <p>
-              <Link href="/disconnect">Disconnect</Link>
+              <Link href="/aboutus">About us</Link>
             </p>
           </div>
         </div>

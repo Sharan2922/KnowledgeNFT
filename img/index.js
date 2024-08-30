@@ -52,8 +52,57 @@ import founder1 from "./founder1.jpg";
 import founder2 from "./founder2.jpg";
 import founder3 from "./founder3.jpg";
 import founder4 from "./founder4.jpg";
+import Aiml from "./Aiml.jpg";
+import blockchain from "./blockchain.jpg";
+import blockchain2 from "./blockchain2.jpg";
+import ds from "./ds.png";
+import ds2 from "./ds2.webp";
+import main from "./main.png";
+import microsoft from "./microsoft.png";
+import pyhon from "./python.webp";
+import imagee from "./imagee.jpg";
+import logo2 from "./logo2.png";
+import AI from "./AI.jpg";
+import Datascience from "./Datascience.jpeg";
+import dev2 from "./dev2.webp";
+import Dsa from "./Dsa.jpg";
+import frameworks from "./frameworks.webp";
+import web3 from "./web3.jpg";
+import logo3 from "./logo3.png"
+import videos1 from "./videos1.jpg"
+import videos2 from "./videos2.jpg"
+import videos3 from "./videos3.jpg"
+import videos4 from "./videos4.jpg"
+import videos5 from "./videos5.jpg"
+import videos6 from "./videos6.jpg";
+import logo4 from "./logo4.png";
+
 
 export default {
+  AI,
+  logo4,
+  videos1,
+  videos2,
+  videos3,
+  videos4,
+  videos5,
+  videos6,
+  logo3,
+  Datascience,
+  dev2,
+  Dsa,
+  frameworks,
+  web3,
+  Aiml,
+  logo2,
+  imagee,
+  blockchain,
+  blockchain2,
+  ds,
+  ds2,
+  main,
+  microsoft,
+  pyhon,
   collection,
   hero2,
   founder1,

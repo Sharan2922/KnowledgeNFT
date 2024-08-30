@@ -23,9 +23,9 @@ const HeroSection = () => {
         </div>
         <div className={Style.heroSection_box_right}>
           <Image
-            src={images.hero}
+            src={images.imagee}
             alt="Hero section"
-            width={600}
+            width={700}
             height={600}
           />
         </div>

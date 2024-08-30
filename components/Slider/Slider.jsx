@@ -10,27 +10,27 @@ import images from "../../img";
 const Slider = () => {
   const FollowingArray = [
     {
-      background: images.creatorbackground3,
+      background: images.videos3,
       user: images.user3,
     },
     {
-      background: images.creatorbackground4,
+      background: images.videos4,
       user: images.user4,
     },
     {
-      background: images.creatorbackground5,
+      background: images.videos5,
       user: images.user5,
     },
     {
-      background: images.creatorbackground6,
+      background: images.videos6,
       user: images.user6,
     },
     {
-      background: images.creatorbackground1,
+      background: images.videos1,
       user: images.user1,
     },
     {
-      background: images.creatorbackground2,
+      background: images.videos2,
       user: images.user2,
     },
   ];
@@ -58,9 +58,9 @@ const Slider = () => {
   return (
     <div className={Style.slider}>
       <div className={Style.slider_box}>
-        <h2>Explore NFTs Video</h2>
+        <h2>Explore Video Courses Collection</h2>
         <div className={Style.slider_box_button}>
-          <p>Click on play icon & enjoy Nfts Video</p>
+          <p>Click on play icon & watch courses</p>
           <div className={Style.slider_box_button_btn}>
             <div
               className={Style.slider_box_button_btn_icon}

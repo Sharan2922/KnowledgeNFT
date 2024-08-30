@@ -27,7 +27,7 @@ const searchPage = () => {
         .catch(error => {
             console.log("Error fetching NFTs:", error);
         });
-}, []);  // Empty array means it runs only on component mount
+}, []);  
 
   const onHandleSearch = (value)=>{
     const filteredNFTS = nfts.filter(({name})=>name.toLowerCase().includes(value.toLowerCase()));

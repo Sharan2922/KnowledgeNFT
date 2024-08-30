@@ -70,7 +70,9 @@ const NavBar = () => {
             <div className={style.navbar_container}>
                 <div className={style.navbar_container_left}>
                     <div className={style.logo}>
-                        <Image src={images.logo} alt="Nft Marketplace" width={150} height={100} />
+                        <Image src={images.logo4} alt="Nft Marketplace" width={150} height={100} onClick={()=>router.push("/")}/>
+                        
+                        
                     </div>
                     <div className={style.navbar_container_left_box_input}>
                         <div className={style.navbar_container_left_box_input_box}>
@@ -115,7 +117,7 @@ const NavBar = () => {
                     <div className={style.navbar_container_right_profile_box}>
                         <div className={style.navbar_container_right_profile}>
                             <Image src={images.user1} alt="Profile" width={40} height={40} onClick={() => openProfile()} className={style.navbar_container_right_profile} />
-                            {profile && <Profile />}
+                            {profile && <Profile currentAcco={currentAcco}/>}
                         </div>
                     </div>
                     <div className={style.navbar_container_right_menuBtn}>

@@ -59,11 +59,11 @@ const Filter = () => {
     <div className={Style.filter}>
       <div className={Style.filter_box}>
         <div className={Style.filter_box_left}>
-          <button onClick={() => {}}>NFTs</button>
-          <button onClick={() => {}}>Arts</button>
-          <button onClick={() => {}}>Musics</button>
-          <button onClick={() => {}}>Sports</button>
-          <button onClick={() => {}}>Photography</button>
+          <button onClick={() => {}}>Notes</button>
+          <button onClick={() => {}}>Certifications</button>
+          <button onClick={() => {}}>Languages</button>
+          <button onClick={() => {}}>Technolgy</button>
+          <button onClick={() => {}}>Programming</button>
         </div>
 
         <div className={Style.filter_box_right}>

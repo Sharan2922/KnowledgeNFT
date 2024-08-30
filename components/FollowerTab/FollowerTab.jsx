@@ -13,95 +13,95 @@ import images from "../../img";
 const FollowerTab = () => {
   const CardArray = [
     {
-      background: images.creatorbackground1,
+      background: images.Aiml,
       user: images.user1,
     },
     {
-      background: images.creatorbackground2,
+      background: images.blockchain,
       user: images.user2,
     },
     {
-      background: images.creatorbackground3,
+      background: images.ds,
       user: images.user3,
     },
     {
-      background: images.creatorbackground4,
+      background: images.blockchain2,
       user: images.user4,
     },
     {
-      background: images.creatorbackground5,
+      background: images.ds2,
       user: images.user5,
     },
     {
-      background: images.creatorbackground6,
+      background: images.microsoft,
       user: images.user6,
     },
     {
-      background: images.creatorbackground7,
+      background: images.pyhon,
       user: images.user7,
     },
     {
-      background: images.creatorbackground8,
+      background: images.main,
       user: images.user8,
     },
   ];
   const FollowingArray = [
     {
-      background: images.creatorbackground3,
+      background: images.ds,
       user: images.user3,
     },
     {
-      background: images.creatorbackground4,
+      background: images.blockchain2,
       user: images.user4,
     },
     {
-      background: images.creatorbackground5,
+      background: images.ds2,
       user: images.user5,
     },
     {
-      background: images.creatorbackground6,
+      background: images.microsoft,
       user: images.user6,
     },
     {
-      background: images.creatorbackground1,
+      background: images.Aiml,
       user: images.user1,
     },
     {
-      background: images.creatorbackground2,
+      background: images.blockchain,
       user: images.user2,
     },
   ];
   const NewsArray = [
     {
-      background: images.creatorbackground1,
+      background: images.Aiml,
       user: images.user1,
     },
     {
-      background: images.creatorbackground2,
+      background: images.blockchain,
       user: images.user2,
     },
     {
-      background: images.creatorbackground3,
+      background: images.ds,
       user: images.user3,
     },
     {
-      background: images.creatorbackground4,
+      background: images.blockchain2,
       user: images.user4,
     },
     {
-      background: images.creatorbackground5,
+      background: images.ds2,
       user: images.user5,
     },
     {
-      background: images.creatorbackground6,
+      background: images.microsoft,
       user: images.user6,
     },
     {
-      background: images.creatorbackground7,
+      background: images.pyhon,
       user: images.user7,
     },
     {
-      background: images.creatorbackground8,
+      background: images.main,
       user: images.user8,
     },
   ];
@@ -135,7 +135,7 @@ const FollowerTab = () => {
   return (
     <div className={Style.followerTab}>
       <div className={Style.followerTab_title}>
-        <h2> Top Creators List..</h2>
+        <h2> Top Educators List..</h2>
         <div className={Style.followerTab_tabs}>
           <div className={Style.followerTab_tabs_btn}>
             <button onClick={() => openPopular()}>
@@ -178,7 +178,7 @@ const FollowerTab = () => {
       <div className={Style.followerTab_member}>
         <div className={Style.followerTab_member_box}>
           <a href="#">Show me more</a>
-          <a href="#">Become, author</a>
+          <a href="#">Become, Educator</a>
         </div>
       </div>
     </div>

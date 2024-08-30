@@ -8,20 +8,21 @@ import images from "../../img";
 
 const Category = () => {
   const CategoryArray = [
-    images.creatorbackground1,
-    images.creatorbackground10,
-    images.creatorbackground11,
-    images.creatorbackground2,
-    images.creatorbackground4,
-    images.creatorbackground5,
+    { image: images.AI, name: "AI & ML" },
+    { image: images.Datascience, name: "Data Science" },
+    { image: images.web3, name: "WEB3" },
+    { image: images.frameworks, name: "Frameworks" },
+    { image: images.Dsa, name: "DSA" },
+    { image: images.dev2, name: "Development" },
   ];
+
   return (
     <div className={Style.box_category}>
       <div className={Style.category}>
-        {CategoryArray.map((el, i) => (
-          <div className={Style.category_box} key={1 + 1}>
+        {CategoryArray.map((category, i) => (
+          <div className={Style.category_box} key={i}>
             <Image
-              src={el}
+              src={category.image}
               className={Style.category_box_img}
               alt="Background image"
               width={350}
@@ -31,11 +32,11 @@ const Category = () => {
 
             <div className={Style.category_box_title}>
               <span>
-                {/* <BsCircleFill /> */}
+                <BsCircleFill />
               </span>
               <div className={Style.category_box_title_info}>
-                {/* <h4>Enterainment</h4>
-                <small>1995 NFTS</small> */}
+                <h4>{category.name}</h4>
+                <small>Exclusive </small>
               </div>
             </div>
           </div>
