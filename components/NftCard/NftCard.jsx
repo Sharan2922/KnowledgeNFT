@@ -4,7 +4,7 @@ import { BsImages } from "react-icons/bs";
 import Image from "next/image";
 
 //INTERNAL IMPORT
-import Style from "./NFTCard.module.css";
+import Style from "./NftCard.module.css";
 import images from "../../img";
 
 const NFTCard = ({NFTData}) => {
