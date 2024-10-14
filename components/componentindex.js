@@ -15,10 +15,12 @@ import AudioLive from './AudioLive/AudioLive';
 import LikeProfile from './LikeProfile/Likeprofile';
 import Slider from './Slider/Slider';
 import Video from './Video/Video';
+import Loader from './Loader/Loader';
 // import SliderCard from './Slider/SliderCard/SliderCard';
 
 export {
     Button,
+    Loader,
     Footer,
     Video,
     LikeProfile, 
