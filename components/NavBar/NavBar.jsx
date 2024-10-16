@@ -11,7 +11,7 @@ import { CgMenuLeft, CgMenuRight } from 'react-icons/cg';
 // Internal style
 import style from "./NavBar.module.css";
 import { Discover, HelpCenter, Notification, Profile, SideBar } from './index';
-import { Button } from '../componentindex';
+import { Button , Error} from '../componentindex';
 import images from '../../img';
 
 
@@ -63,7 +63,7 @@ const NavBar = () => {
         setOpenSideMenu(prev => !prev);
     };
 
-    const {currentAcco, connectWallet} = useContext(NFTMarketplaceContext);
+    const {currentAcco, connectWallet,openError} = useContext(NFTMarketplaceContext);
 
     return (
         <div className={style.navbar}>
@@ -133,6 +133,7 @@ const NavBar = () => {
                     connectWallet= {connectWallet}/>
                 </div>
             )}
+            {openError && <Error /> }
         </div>
     );
 };

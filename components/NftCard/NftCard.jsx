@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
 import { BsImages } from "react-icons/bs";
 import Image from "next/image";
+import Link from "next/link";
 
 //INTERNAL IMPORT
 import Style from "./NftCard.module.css";
@@ -33,7 +34,8 @@ const NFTCard = ({NFTData}) => {
   return (
     <div className={Style.NFTCard}>
       {NFTData.map((el, i) => (
-        <div className={Style.NFTCard_box} key={i + 1}>
+        <Link href={{pathname: "nftdetails", query: el}}>
+          <div className={Style.NFTCard_box} key={i + 1}>
           <div className={Style.NFTCard_box_img}>
             <Image
               src={el.image}
@@ -93,7 +95,8 @@ const NFTCard = ({NFTData}) => {
               <BsImages />
             </div>
           </div>
-        </div>
+          </div>
+        </Link>
       ))}
     </div>
   );

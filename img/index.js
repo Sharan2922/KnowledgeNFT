@@ -76,10 +76,14 @@ import videos4 from "./videos4.jpg"
 import videos5 from "./videos5.jpg"
 import videos6 from "./videos6.jpg";
 import logo4 from "./logo4.png";
+import Loader from "./Loader.gif"
+import Error from "./Error.gif"
 
 
 export default {
   AI,
+  Error,
+  Loader,
   logo4,
   videos1,
   videos2,

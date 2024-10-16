@@ -1,8 +1,8 @@
 import React, {useState,useEffect,useContext} from 'react'
 import Style from '../styles/index.module.css'
-import { HeroSection, Service,Slider,AudioLive,Collection,FollowerTab, BigNFTSlider,Subscribe, Title, Category, Filter, NFTCard } from '@/components/componentindex'
+import { HeroSection, Service,Slider,AudioLive,Collection,FollowerTab, BigNFTSlider,Subscribe, Title, Category, Filter, NFTCard, Loader } from '@/components/componentindex'
 import { NFTMarketplaceContext } from '@/Context/NFTMarketplaceContext'
-
+import {getTopCreators} from "../TopCreators/TopCreators"
 const Home = () => {
   const {checkWalletConnected} = useContext(NFTMarketplaceContext)
 
@@ -13,6 +13,8 @@ const Home = () => {
   const { fetchNFTs } = useContext(NFTMarketplaceContext);
   const [nfts, setNfts] = useState([]);
   const [nftsCopy, setNftsCopy] = useState([]);
+
+  const creators = getTopCreators(nfts);
 
   useEffect(() => {
     fetchNFTs()
@@ -41,7 +43,8 @@ const Home = () => {
         paragraph="Click on the play button and enjoy the audio."
       />
       <AudioLive />
-      <FollowerTab />
+      {creators.length == 0 ? (<Loader />) : (<FollowerTab  TopCreator={creators}/>)}
+      
       {/* <Title
         heading="Video Collection"
         paragraph="Click on play button and enjoy NFt Video."
@@ -52,7 +55,7 @@ const Home = () => {
       heading ="Featutred NFTs"
       paragraph="Discover the most outstanding NFTs in all topics" />
       <Filter />
-      <NFTCard  NFTData={nfts}/>
+      {nfts.length == 0 ? <Loader /> :<NFTCard  NFTData={nfts}/> }
       <Title
       heading="Browse by categoty"
       paragraph="Explore the NFTs in the most featured categories" />

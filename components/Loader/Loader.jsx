@@ -8,7 +8,9 @@ const Loader = () => {
     <div className={Style.Loader}>
         <div className={Style.Loader_box}>
             <div className={Style.Loader_box_img}>
-
+              <Image src={images.Loader} alt='Loader' width={200} height={200}
+              className={Style.Loader_box_img_img} objectFit='cover'
+              />
             </div>
 
         </div>

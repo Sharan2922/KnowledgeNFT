@@ -10,41 +10,41 @@ import Style from "./FollowerTab.module.css";
 import FollowerTabCard from "./FollowerTabCard/FollowerTabCard";
 import images from "../../img";
 
-const FollowerTab = () => {
-  const CardArray = [
-    {
-      background: images.Aiml,
-      user: images.user1,
-    },
-    {
-      background: images.blockchain,
-      user: images.user2,
-    },
-    {
-      background: images.ds,
-      user: images.user3,
-    },
-    {
-      background: images.blockchain2,
-      user: images.user4,
-    },
-    {
-      background: images.ds2,
-      user: images.user5,
-    },
-    {
-      background: images.microsoft,
-      user: images.user6,
-    },
-    {
-      background: images.pyhon,
-      user: images.user7,
-    },
-    {
-      background: images.main,
-      user: images.user8,
-    },
-  ];
+const FollowerTab = ({TopCreator}) => {
+  // const CardArray = [
+  //   {
+  //     background: images.Aiml,
+  //     user: images.user1,
+  //   },
+  //   {
+  //     background: images.blockchain,
+  //     user: images.user2,
+  //   },
+  //   {
+  //     background: images.ds,
+  //     user: images.user3,
+  //   },
+  //   {
+  //     background: images.blockchain2,
+  //     user: images.user4,
+  //   },
+  //   {
+  //     background: images.ds2,
+  //     user: images.user5,
+  //   },
+  //   {
+  //     background: images.microsoft,
+  //     user: images.user6,
+  //   },
+  //   {
+  //     background: images.pyhon,
+  //     user: images.user7,
+  //   },
+  //   {
+  //     background: images.main,
+  //     user: images.user8,
+  //   },
+  // ];
   const FollowingArray = [
     {
       background: images.ds,
@@ -153,7 +153,7 @@ const FollowerTab = () => {
 
       {popular && (
         <div className={Style.followerTab_box}>
-          {CardArray.map((el, i) => (
+          {TopCreator.map((el, i) => (
             <FollowerTabCard key={i} i={i} el={el} />
           ))}
         </div>

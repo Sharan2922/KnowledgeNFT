@@ -16,10 +16,12 @@ import LikeProfile from './LikeProfile/Likeprofile';
 import Slider from './Slider/Slider';
 import Video from './Video/Video';
 import Loader from './Loader/Loader';
+import Error from './Error/Error';
 // import SliderCard from './Slider/SliderCard/SliderCard';
 
 export {
     Button,
+    Error,
     Loader,
     Footer,
     Video,

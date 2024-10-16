@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { MdVerified } from "react-icons/md";
 import { TiTick } from "react-icons/ti";
+import images from "../../../img"
 
 // INTERNAL IMPORT
 import Style from "./FollowerTabCard.module.css";
@@ -25,7 +26,7 @@ const FollowerTabCard = ({ i, el }) => {
         <div className={Style.FollowerTabCard_box_img}>
           <Image
             className={Style.FollowerTabCard_box_img_img}
-            src={el.background}
+            src={el.background || images.creatorbackground1}
             alt="Profile background"
             width={500}
             height={300}
@@ -36,7 +37,7 @@ const FollowerTabCard = ({ i, el }) => {
         <div className={Style.FollowerTabCard_box_profile}>
           <Image
             className={Style.FollowerTabCard_box_profile_img}
-            src={el.user}
+            src={el.user || images.user1}
             alt="Profile picture"
             width={50}
             height={50}
@@ -46,12 +47,13 @@ const FollowerTabCard = ({ i, el }) => {
         <div className={Style.FollowerTabCard_box_info}>
           <div className={Style.FollowerTabCard_box_info_name}>
             <h4>
-              Giada Mann{" "}
+              {el.seller.slice(0,9)}
+              {" "}{" "}
               <span>
                 <MdVerified />
               </span>
             </h4>
-            <p>12.321 ETH</p>
+            <p>{el.total || 0} ETH</p>
           </div>
 
           <div className={Style.FollowerTabCard_box_info_following}>

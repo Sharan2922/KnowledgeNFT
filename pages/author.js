@@ -19,26 +19,32 @@ const Author = () => {
     {
       background: images.creatorbackground1,
       user: images.user1,
+      seller: '048f847567335999234572f'
     },
     {
       background: images.creatorbackground2,
       user: images.user2,
+      seller: '048f847567335999234572f'
     },
     {
       background: images.creatorbackground3,
       user: images.user3,
+      seller: '048f847567335999234572f'
     },
     {
       background: images.creatorbackground4,
       user: images.user4,
+      seller: '048f847567335999234572f'
     },
     {
       background: images.creatorbackground5,
       user: images.user5,
+      seller: '048f847567335999234572f'
     },
     {
       background: images.creatorbackground6,
       user: images.user6,
+      seller: '048f847567335999234572f'
     },
   ];
 
