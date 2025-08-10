@@ -1,10 +1,45 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# KnowledgeNFT – Decentralized Knowledge Marketplace
 
-## Getting Started
+## 📌 Overview
+KnowledgeNFT is a blockchain-powered marketplace where knowledge is tokenized as NFTs, enabling creators to monetize their expertise and learners to access verified, immutable educational content.  
+This platform leverages **Ethereum Smart Contracts**, **IPFS**, and **ReactJS (Next.js)** to provide a transparent, censorship-resistant, and secure way to share and acquire knowledge.
 
+---
+
+## 🚀 Features
+- Mint and trade knowledge-based NFTs.
+- Verified proof of authorship on blockchain.
+- Purchase and unlock exclusive content via NFTs.
+- Immutable storage on IPFS.
+- MetaMask wallet integration.
+
+---
+
+## 🛠 Tech Stack
+- **Frontend:** Next.js + ReactJS
+- **Blockchain:** Ethereum (Solidity Smart Contracts)
+- **Storage:** IPFS
+- **Wallet:** MetaMask, Web3.js
+
+---
+
+## 📂 Project Structure
+KnowledgeNFT/
+│── contracts/ # Solidity smart contracts
+│── src/ # Frontend code
+│── public/ # Static assets
+│── scripts/ # Deployment scripts
+│── README.md # Documentation
+
+yaml
+
+---
+
+## 🔧 Installation & Running Locally
 First, run the development server:
 
 ```bash
+npm install
 npm run dev
 # or
 yarn dev
@@ -12,29 +47,29 @@ yarn dev
 pnpm dev
 # or
 bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 in your browser to view the app.
+Smart contracts can be deployed locally with:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+bash
+Copy
+Edit
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+npx hardhat compile
+npx hardhat run scripts/deploy.js --network localhost
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+🧠Future Improvements
+DAO governance for content moderation.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Royalty-based NFT resale system.
 
-## Learn More
+AI plagiarism detection.
 
-To learn more about Next.js, take a look at the following resources:
+📄 License
+MIT License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+👤 Author
+Sharath / Sharan Shetty
+Blockchain Developer | Web3 Enthusiast | AI Integrator
+GitHub: Sharan2922
+LinkedIn: Add your LinkedIn link
