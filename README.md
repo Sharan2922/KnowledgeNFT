@@ -58,7 +58,9 @@ Edit
 npx hardhat compile
 npx hardhat run scripts/deploy.js --network localhost
 
-🧠Future Improvements
+---
+
+## 🧠 Future Improvements
 DAO governance for content moderation.
 
 Royalty-based NFT resale system.
@@ -68,7 +70,7 @@ AI plagiarism detection.
 📄 License
 MIT License
 
-👤 Author
+## 👤 Author
 Sharath / Sharan Shetty
 Blockchain Developer | Web3 Enthusiast | AI Integrator
 GitHub: Sharan2922
